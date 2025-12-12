@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { font-size: 3em; margin: 0; }
+        p { font-size: 1.2em; margin-top: 20px; }
+        .btn {
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Welcome!</h1>
+        <p>Simple Website with CI/CD</p>
+        <button class="btn" onclick="alert('Version 1.0')">Check Version</button>
+        <p id="time"></p>
+    </div>
+    <script>
+        setInterval(() => {
+            document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
