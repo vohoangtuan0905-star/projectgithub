@@ -8,9 +8,20 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.22.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vohoangtuan0905-star/projectgithub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vohoangtuan0905-star/projectgithub/issues"
+  },
+  "homepage": "https://github.com/vohoangtuan0905-star/projectgithub#readme"
 }
